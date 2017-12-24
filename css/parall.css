@@ -1,0 +1,23 @@
+.parallaxx {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer-lower {
+  top: 100px;
+  left: 30vh;
+}
+.parallax__layer-deep {
+  transform: translateZ(-2px) scale(1);
+}
+.parallax__layer-back {
+  transform: translateZ(-1px) scale(2);
+}

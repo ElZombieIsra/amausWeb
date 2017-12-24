@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Amaus</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="icon" href="images/LOGO/B_N/Negro/Isotipo.png">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69464765-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-69464765-2');
+	</script>
+
+</head>
+<body data-spy="scroll" data-taget=".navbar" style="color: white;" id="ht">
+    <noscript>
+        <div style="position: fixed; top: 0px; left: 0px; z-index: 3000; 
+                    height: 100%; width: 100%; background-color: #000000">
+            <img src="images/LOGO/B_N/Blanco/Isotipo.png" style="height: 90vh; margin: auto; display: block;" alt="You need to active Javascript">
+            <p class="text-center display-4">This page needs Javascript to run. Active Javascript in your browser</p>
+        </div>
+    </noscript>
+  <!--/////////////////////////////////////////////////////////////////////-->
+  <style type="text/css">
+    .parallax-window {
+        min-height: 400px;
+        background: transparent;
+        background-color: transparent;
+    }
+    .parallax{ 
+      height: 40vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    html {
+      position: relative;
+      min-height: 100%;
+      height: 100%;
+    }
+    body {
+      background: #0CC285; 
+      background: -webkit-linear-gradient(#1E0C38 30%, #0CC285); 
+      background: -o-linear-gradient(#1E0C38 30%, #0CC285); 
+      background: -moz-linear-gradient(#1E0C38 30%, #0CC285); 
+      background: linear-gradient(#1E0C38 30%, #0CC285); 
+      background-color: #000000;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .mistery{
+      filter: grayscale(1) contrast(3);
+      background: #848D8A; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#19181B 30%, #848D8A); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#19181B 30%, #848D8A); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#19181B 30%, #848D8A); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#19181B 30%, #848D8A); /* Standard syntax */
+      background-color: #848D8A;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100vw 100vh;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: -10;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 60px;
+      line-height: 60px; /* Vertically center the text there */
+      background-color: #f5f5f5;
+    }
+    .heau{
+      height: 100vh;
+    }
+    .parallax-window {
+        min-height: 400px;
+        background: transparent;
+    }
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+    .skrollr-desktop body {
+      height:100% !important;
+    }
+    .parallax-image-wrapper {
+      position:fixed;
+      left:0;
+      width:100%;
+      overflow:hidden;
+    }
+    .parallax-image-wrapper-50 {
+      height:50%;
+      top:-50%;
+    }
+    .parallax-image-wrapper-100 {
+      height:100%;
+      top:-100%;
+    } 
+    .parallax-image {
+      display:none;
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:cover;
+    }
+    .parallax-image-50 {
+      height:200%;
+      top:-50%;
+    }
+
+    .parallax-image-100 {
+      height:100%;
+      top:0;
+    }
+
+    .parallax-image.skrollable-between {
+      display:block;
+    }
+
+    .no-skrollr .parallax-image-wrapper {
+      display:none !important;
+    }
+
+    #skrollr-body {
+      height:100%;
+      overflow:visible;
+      position:relative;
+    }
+
+    .gap {
+      background:transparent center no-repeat;
+      background-size:cover;
+    }
+
+    .skrollr .gap {
+      background:transparent !important;
+    }
+
+    .gap-50 {
+      height:50%;
+    }
+
+    .gap-100 {
+      height:100%;
+    }
+
+    .header, .content {
+      background:#fff;
+      padding:1em;
+
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+    }
+
+    .content-full {
+      height:100%;
+    }
+
+    #done {
+      height:100%;
+    }
+    .ic{
+      height: 70px;
+    }
+    .icons a{
+      color: transparent;
+    }
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }
+  </style>
+  <div id="loader" style="position: fixed; top: 0px; left: 0px; z-index: 3000; height: 100%; width: 100%; background-color: #000000">
+            <div style="height: 40vh"></div>
+            <img id="loadImage" src="images/LOGO/B_N/Blanco/Logotipo.png" style="width: 80vw; margin: auto; display: block;">
+        </div>
+  <div>
+    <!--/////////////////////////////////////////////////////////////////////-->
+  	<nav class="navbar fixed-top navbar-expand-md navbar-dark">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#amausNav" aria-controls="amausNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+  		<a class="navbar-brand" href="#">
+  			<img src="images/LOGO/B_N/Blanco/Imagotipo.png" height="50">
+  			<!-- <img src="images/LOGO/B_N/Blanco/Logotipo.png" height="30" class="d-inline-block align-bottom">-->
+  		</a>
+      <div class="collapse navbar-collapse justify-content-end" id="amausNav">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" data-scroll>Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#music" class="nav-link" data-scroll>Music</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Gallery" class="nav-link" data-scroll>Gallery</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a href="#News" class="nav-link" data-scroll>News</a>
+          </li>
+          -->
+          <li class="nav-item">
+            <a href="#Mistery" class="nav-link" data-scroll>Mistery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Tour" class="nav-link" data-scroll>Tour dates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link" data-scroll>About</a>
+          </li>
+        </ul>
+      </div>
+  	</nav>
+    <div class="container-fluid heau pt-5" id="home">
+      <div class="text-center" style="height: 100px;"> 
+          <img src="images/LOGO/B_N/Blanco/Isotipo.png" style="height: 100%;">
+      </div>
+      <div class="row">
+        <div class="col d-none d-lg-block"  style="height:150px;"></div>
+        <div class="col d-lg-none d-md-block d-none" style="height:75px;"></div>
+        <div class="col d-block d-md-none" style="height:25px;"></div>
+      </div>
+      <div class="row">
+        <div id="txt" class="col d-none d-lg-block text-center display-2 font-weight-bold"></div>
+        <div id="txt1" class="col d-lg-none d-md-block d-none text-center display-4 font-weight-bold"></div>
+        <div id="txt2" class="col d-block d-md-none text-center font-weight-bold"></div>
+      </div>
+      <div class="row" style="height:20px;"></div>
+      <div class="row">
+        <div class="col text-center">Young producer making its way to the top</div>
+      </div>
+      <div class="row" style="height:30px;"></div>
+      <div class="text-center">
+        <a href="#About">
+        	<button type="button" class="btn bg-dark text-white btn-lg">Contact
+        	</button>
+        </a>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div data-parallax="scroll" data-image-src="images/amaus.jpeg" data-natural-width="1280" data-natural-height="1280" class="parallax-window"></div>
+    <!--
+    <div class="container-fluid parallax" style="background-image: url('images/Cover/V3-01.jpg');" id="parl_1"></div>-->
+    <div class="container-fluid py-5" id="music">
+      <div class="row">
+        <div class="col h1 pt-3">Youtube</div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md col-sm-10 text-center no-gutters d-block embed-responsive embed-responsive-16by9">
+          <embed class="embed-responsive-item" src="https://www.youtube.com/embed/gYFibFDDX04">
+        </div>
+        <div class="col-md col-sm-10 text-center no-gutters d-block embed-responsive embed-responsive-16by9">
+          <embed class="embed-responsive-item" src="https://www.youtube.com/embed/xNRIQ1PXlMU">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col h1 pt-3">Spotify</div>
+      </div>
+      <div class="row">
+      	<div class="col d-block d-md-none text-center">
+      		<iframe src="https://open.spotify.com/embed?uri=spotify:album:4My1CLsnfTRisKH3vuZGSI" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>
+      	</div>
+      	<div class="col d-none d-md-block  text-center">
+      		<iframe src="https://open.spotify.com/embed?uri=spotify:album:4My1CLsnfTRisKH3vuZGSI" width="500" height="80" frameborder="0" allowtransparency="true"></iframe>
+      	</div>
+      </div>
+    </div>
+    <div style="background-color: #f5f5f5; height: 100vh;" data-z-index="0" data-parallax="scroll" data-image-src="images/LOGO/B_N/Negro/Isotipo1.png" data-natural-width="1833" data-natural-height="1833" class="parallax-window"></div>
+    <div class="gap gap-50" style="background-color: #f5f5f5; background-size: 50%;  background-image: url('images/LOGO/B_N/Negro/Isotipo.png');"></div>
+   <!--
+    <div class="container-fluid parallax" style="background-color: #f5f5f5; background-size: 50%;  background-image: url('images/LOGO/B_N/Negro/Isotipo.png'); height: 60vh;" id="parl_2"></div>
+    -->
+    <div class="container-fluid heau pt-5" id="Gallery">
+      <div class="carousel slide pt-3" id="carouselGallery" data-ride="false" data-pause="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselGallery" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselGallery" data-slide-to="1"></li>
+          <li data-target="#carouselGallery" data-slide-to="2"></li>
+          <li data-target="#carouselGallery" data-slide-to="3"></li>
+          <li data-target="#carouselGallery" data-slide-to="4"></li>
+          <li data-target="#carouselGallery" data-slide-to="5"></li>
+          <li data-target="#carouselGallery" data-slide-to="6"></li>
+          <li data-target="#carouselGallery" data-slide-to="7"></li>
+          <li data-target="#carouselGallery" data-slide-to="8"></li>
+          <li data-target="#carouselGallery" data-slide-to="9"></li>
+          <li data-target="#carouselGallery" data-slide-to="10"></li>
+          <li data-target="#carouselGallery" data-slide-to="11"></li>
+          <li data-target="#carouselGallery" data-slide-to="12"></li>
+          <li data-target="#carouselGallery" data-slide-to="13"></li>
+          <li data-target="#carouselGallery" data-slide-to="14"></li>
+          <li data-target="#carouselGallery" data-slide-to="15"></li>
+          <li data-target="#carouselGallery" data-slide-to="16"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="images/Galeria/1.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/2.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/3.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/4.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/5.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/6.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/7.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/8.jpg" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/9.JPG" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/10.JPG" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/11.JPG" class="d-block mx-auto" style="height: 90vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/12.jpg" class="mx-auto d-none d-lg-block" style="height: 90vh;">
+            <img src="images/Galeria/12.jpg" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/13.jpg" class="mx-auto d-none d-lg-block" style="height: 90vh;">
+            <img src="images/Galeria/13.jpg" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/14.jpg" class="d-none d-lg-block mx-auto" style="height: 90vh;">
+            <img src="images/Galeria/14.jpg" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/15.JPG" class="d-none d-lg-block mx-auto" style="height: 90vh;">
+            <img src="images/Galeria/15.JPG" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/16.JPG" class="d-none d-lg-block mx-auto" style="height: 90vh;">
+            <img src="images/Galeria/16.JPG" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Galeria/17.JPG" class="d-none d-lg-block mx-auto" style="height: 90vh;">
+            <img src="images/Galeria/17.JPG" class="mx-auto d-block d-lg-none" style="width: 100vw; height: 40vh;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!--
+	    <div class="container-fluid heau pt-5" id="News">
+	      <div class="row">
+	        <div class="col h1 pt-3">Se supone que aquí hay noticias pero no sé qué pedo, jajaja</div>
+	      </div>
+	    </div>
+	-->
+    <div class="container-fluid pt-5" id="Mistery">
+      <div class="row">
+          <div class="col"></div>
+        <div class="col h1 pt-3"><button id="misteryBtn" class="btn btn-outline-dark btn-sm d-flex mx-auto" onclick="misteryGG ()">Do NOT touch this button</button>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <div class="container-fluid heau pt-5" id="Tour">
+      <p class="h1 pt-3 font-weight-bold">Tour dates</p>
+      <div style="height: 25vh;" class="d-block"></div>
+      <div class="row">
+        <div class="col display-2 font-weight-bold pt-3 text-center d-none d-lg-block" id="tourDate"></div>
+        <div class="col display-4 font-weight-bold pt-3 text-center d-none d-md-block d-lg-none" id="tourDatesMd"></div>
+        <div class="col h1 font-weight-bold pt-3 text-center d-block d-md-none" id="tourDates"></div>
+      </div>
+    </div>
+    <div class="container-fluid heau pt-5" id="About">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+      <div class="row">
+        <div class="col pt-3 h1">Redes sociales</div>
+      </div>
+      <div class="row text-center vertical-align" style="height: 80vh;">
+        <div class="col d-none d-lg-block"></div>
+        <div class="col">
+          <a href="https://www.facebook.com/amaus0/" target="_blank" style="">
+            <svg version="1.1" id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" class="ic">
+              <path style="fill: white;" d="M17,1H3C1.9,1,1,1.9,1,3v14c0,1.101,0.9,2,2,2h7v-7H8V9.525h1V7.475c0-2.164,1.212-3.684,3.766-3.684l1.803,0.002v2.605 h-1.197C13.378,6.398,13,7.144,13,7.836v1.69h1.568L15,12h-2v7h4c1.1,0,2-0.899,2-2V3C19,1.9,18.1,1,17,1z"/>
+            </svg>
+            <p class="h3" style="color: white;">Facebook</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/amaus0/?hl=es" target="_blank">
+            <svg id="Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="ic">
+              <path style="fill: white;" d="M18.94586,6.28931a6.60561,6.60561,0,0,0-.41833-2.18463,4.41189,4.41189,0,0,0-1.03809-1.59412,4.41189,4.41189,0,0,0-1.59412-1.03809,6.60561,6.60561,0,0,0-2.18463-.41833C12.75073,1.01038,12.44427,1,10,1s-2.75073.01038-3.71069,0.05414a6.60561,6.60561,0,0,0-2.18463.41833A4.41189,4.41189,0,0,0,2.51056,2.51056,4.41189,4.41189,0,0,0,1.47247,4.10468a6.60561,6.60561,0,0,0-.41833,2.18463C1.01038,7.24927,1,7.55573,1,10s0.01038,2.75073.05414,3.71069a6.60561,6.60561,0,0,0,.41833,2.18463,4.41189,4.41189,0,0,0,1.03809,1.59412,4.41109,4.41109,0,0,0,1.59412,1.03809,6.60561,6.60561,0,0,0,2.18463.41833C7.24927,18.98969,7.55573,19,10,19s2.75073-.01031,3.71069-0.05414a6.60561,6.60561,0,0,0,2.18463-.41833,4.60208,4.60208,0,0,0,2.6322-2.6322,6.60561,6.60561,0,0,0,.41833-2.18463C18.98962,12.75073,19,12.44427,19,10S18.98962,7.24927,18.94586,6.28931Zm-1.61993,7.34747a4.97824,4.97824,0,0,1-.30994,1.67114A2.98017,2.98017,0,0,1,15.30792,17.016a4.9786,4.9786,0,0,1-1.67114.30994C12.68787,17.3692,12.40326,17.37836,10,17.37836s-2.68787-.00916-3.63678-0.05243A4.9786,4.9786,0,0,1,4.69208,17.016a2.78769,2.78769,0,0,1-1.03485-.67322A2.78769,2.78769,0,0,1,2.984,15.30792a4.97824,4.97824,0,0,1-.30994-1.67114C2.6308,12.68774,2.62164,12.40314,2.62164,10s0.00916-2.68774.05243-3.63678A4.9786,4.9786,0,0,1,2.984,4.69208a2.78769,2.78769,0,0,1,.67322-1.03485A2.78769,2.78769,0,0,1,4.69208,2.984a4.9786,4.9786,0,0,1,1.67114-.30994C7.31226,2.6308,7.59686,2.62164,10,2.62164s2.68774,0.00916,3.63678.05243a4.9786,4.9786,0,0,1,1.67114.30994,2.78769,2.78769,0,0,1,1.03485.67322A2.78769,2.78769,0,0,1,17.016,4.69208a4.9786,4.9786,0,0,1,.30994,1.67114c0.04327,0.949.05243,1.2337,0.05243,3.63678S17.3692,12.68774,17.32593,13.63678ZM10,5.37836A4.62164,4.62164,0,1,0,14.62164,10,4.62169,4.62169,0,0,0,10,5.37836ZM10,13a3,3,0,1,1,3-3A3,3,0,0,1,10,13Zm5.88422-7.8042a1.08,1.08,0,1,1-1.08-1.08A1.08,1.08,0,0,1,15.88422,5.1958Z" transform="translate(-1 -1)"/>
+            </svg>
+            <p class="h3" style="color: white;">Instagram</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://twitter.com/Amaus0" target="_blank">
+            <svg version="1.1" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" class="ic">
+              <path style="fill: white;" d="M17.316,6.246c0.008,0.162,0.011,0.326,0.011,0.488c0,4.99-3.797,10.742-10.74,10.742c-2.133,0-4.116-0.625-5.787-1.697 c0.296,0.035,0.596,0.053,0.9,0.053c1.77,0,3.397-0.604,4.688-1.615c-1.651-0.031-3.046-1.121-3.526-2.621 c0.23,0.043,0.467,0.066,0.71,0.066c0.345,0,0.679-0.045,0.995-0.131c-1.727-0.348-3.028-1.873-3.028-3.703c0-0.016,0-0.031,0-0.047 c0.509,0.283,1.092,0.453,1.71,0.473c-1.013-0.678-1.68-1.832-1.68-3.143c0-0.691,0.186-1.34,0.512-1.898 C3.942,5.498,6.725,7,9.862,7.158C9.798,6.881,9.765,6.594,9.765,6.297c0-2.084,1.689-3.773,3.774-3.773 c1.086,0,2.067,0.457,2.756,1.191c0.859-0.17,1.667-0.484,2.397-0.916c-0.282,0.881-0.881,1.621-1.66,2.088 c0.764-0.092,1.49-0.293,2.168-0.594C18.694,5.051,18.054,5.715,17.316,6.246z"/>
+            </svg>
+            <p class="h3" style="color: white;">Twitter</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="mailto:amausproject@gmail.com" target="_top">
+            <svg version="1.1" id="Mail_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" class="ic">
+              <path style="fill: white;" d="M10,0.3999634c-5.3019409,0-9.5999756,4.2980957-9.5999756,9.6000366S4.6980591,19.5999756,10,19.5999756
+              S19.5999756,15.3019409,19.5999756,10S15.3019409,0.3999634,10,0.3999634z M6.2313232,7h7.5195923
+              c0.3988037,0,0.1935425,0.5117188-0.0234985,0.6430664c-0.217041,0.1308594-3.2213135,1.9470215-3.333313,2.0144043
+              s-0.256958,0.0996094-0.402771,0.0996094c-0.145874,0-0.2908325-0.0322266-0.402771-0.0996094
+              C9.4765625,9.5900879,6.472229,7.7739258,6.255188,7.6430664C6.038208,7.5117188,5.8328857,7,6.2313232,7z M14,12.5
+              c0,0.2099609-0.251709,0.5-0.444458,0.5H6.444458C6.251709,13,6,12.7099609,6,12.5c0,0,0-3.5544434,0-3.6467285
+              c0-0.0917969-0.001709-0.2114258,0.171875-0.109375c0.246521,0.1445312,3.265625,1.9250488,3.416687,2.013916
+              c0.151001,0.0888672,0.256897,0.0995483,0.402771,0.0995483c0.145813,0,0.251709-0.0106812,0.402771-0.0995483
+              s3.1875-1.8688965,3.434021-2.0134277C14.001709,8.642334,14,8.7619629,14,8.8537598C14,8.9460449,14,12.5,14,12.5z"/>
+            </svg>
+            <p class="h3" style="color: white">Email</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://soundcloud.com/amaus0" target="_blank">
+            <svg version="1.1" id="SoundCloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" class="ic">
+              <path style="fill: white;" d="M0.672,13.055L1,11.654l-0.328-1.447c-0.009-0.043-0.092-0.076-0.191-0.076c-0.102,0-0.184,0.033-0.191,0.076L0,11.654
+                l0.289,1.4c0.008,0.045,0.09,0.076,0.191,0.076C0.58,13.131,0.663,13.1,0.672,13.055z M2.723,13.832L3,11.668L2.723,8.32
+                C2.714,8.236,2.609,8.168,2.484,8.168c-0.127,0-0.233,0.068-0.238,0.152L2,11.668l0.246,2.164c0.006,0.086,0.111,0.152,0.238,0.152
+                C2.609,13.984,2.714,13.918,2.723,13.832z M4.768,13.797L5,11.67L4.768,7.213C4.762,7.107,4.639,7.025,4.486,7.025
+                c-0.152,0-0.275,0.082-0.281,0.188L4,11.67l0.205,2.129c0.006,0.103,0.129,0.186,0.281,0.186
+                C4.639,13.984,4.762,13.902,4.768,13.797z M6.81,13.766L7,11.67L6.81,7.18C6.805,7.057,6.664,6.959,6.49,6.959
+                c-0.176,0-0.316,0.098-0.321,0.221L6,11.67l0.17,2.096c0.004,0.123,0.145,0.221,0.32,0.221C6.664,13.986,6.805,13.891,6.81,13.766z
+                 M8.85,13.738L9,11.672L8.85,6.523C8.846,6.381,8.686,6.268,8.492,6.268c-0.194,0-0.354,0.115-0.357,0.256L8,11.67l0.135,2.068
+                c0.003,0.141,0.163,0.256,0.357,0.256C8.686,13.994,8.846,13.881,8.85,13.738z M10.277,13.996c0.008,0,7.1,0.004,7.145,0.004
+                C18.846,14,20,12.883,20,11.506c0-1.377-1.154-2.492-2.578-2.492c-0.353,0-0.689,0.07-0.996,0.193
+                c-0.205-2.246-2.153-4.008-4.529-4.008c-0.581,0-1.148,0.111-1.648,0.297C10.053,5.57,10.002,5.644,10,5.791v7.91
+                C10.002,13.854,10.124,13.98,10.277,13.996z"/>
+              </svg>
+              <p class="h3" style="color: white">Soundcloud</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://open.spotify.com/artist/3GAp9izdq7BGROywlP1go5" target="_blank">
+            <svg version="1.1" id="Spotify" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" class="ic">
+				<g>
+					<path style="fill: white;" d="M10,1.2c-4.861,0-8.8,3.938-8.8,8.8c0,4.859,3.939,8.8,8.8,8.8c4.862,0,8.799-3.94,8.799-8.8
+						C18.799,5.139,14.863,1.2,10,1.2z M13.478,14.502c-0.173,0-0.294-0.066-0.421-0.143c-1.189-0.721-2.662-1.099-4.258-1.099
+						c-0.814,0-1.693,0.097-2.61,0.285l-0.112,0.028c-0.116,0.028-0.235,0.059-0.326,0.059c-0.371,0-0.661-0.288-0.661-0.656
+						c0-0.373,0.21-0.637,0.562-0.703c1.096-0.25,2.128-0.372,3.152-0.372c1.855,0,3.513,0.43,4.931,1.279
+						c0.243,0.142,0.396,0.306,0.396,0.668C14.13,14.209,13.838,14.502,13.478,14.502z M14.391,11.941c-0.207,0-0.343-0.079-0.463-0.149
+						c-2.143-1.271-5.333-1.693-7.961-0.993c-0.044,0.013-0.084,0.025-0.12,0.037c-0.099,0.031-0.191,0.062-0.321,0.062
+						c-0.432,0-0.783-0.353-0.783-0.788c0-0.419,0.219-0.712,0.614-0.824C6.37,9.008,7.321,8.824,8.69,8.824
+						c2.212,0,4.357,0.555,6.038,1.561c0.306,0.175,0.445,0.414,0.445,0.771C15.173,11.59,14.822,11.941,14.391,11.941z M15.427,9.021
+						c-0.195,0-0.315-0.047-0.495-0.144c-1.453-0.872-3.72-1.391-6.069-1.391c-1.224,0-2.336,0.135-3.306,0.397
+						C5.524,7.891,5.493,7.9,5.459,7.91C5.356,7.941,5.227,7.978,5.094,7.978c-0.516,0-0.919-0.408-0.919-0.929
+						c0-0.453,0.254-0.799,0.68-0.925c1.171-0.346,2.519-0.521,4.006-0.521c2.678,0,5.226,0.595,6.991,1.631
+						c0.332,0.189,0.495,0.475,0.495,0.872C16.347,8.619,15.943,9.021,15.427,9.021z"/>
+				</g>
+				</svg>
+            <p class="h3" style="color: white">Spotify</p>
+          </a>
+        </div>
+        <div class="col d-none d-lg-block"></div>
+      </div>
+    </div>
+  </div>
+	<!--
+	<footer class="footer row no-gutters">
+		<img src="images/Cover/V2-01.png" class="d-inline-block col-md/auto align-top" height="60">
+		<audio src="audio/1" class="d-inline-block col-md-4 align-top" autoplay="false" loop="true" controls="true"></audio>
+		<marquee class="font-weight-bold font-italic col" style="color: black">
+			You're listening an Amaus ongoing project 
+		</marquee>
+	</footer>
+  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/parallax.min.js"></script>
+  <script type="text/javascript" src="js/type.js"></script>
+  <script type="text/javascript" src="js/ss.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript">
+    var scroll = new SmoothScroll();
+
+	var smoothScrollWithoutHash = function (selector, settings) {
+		/**
+		 * If smooth scroll element clicked, animate scroll
+		 */
+		var clickHandler = function (event) {
+			var toggle = event.target.closest( selector );
+			console.log(toggle);
+			if ( !toggle || toggle.tagName.toLowerCase() !== 'a' ) return;
+			console.log(toggle.hash);
+			var anchor = document.querySelector( toggle.hash );
+			if ( !anchor ) return;
+
+			event.preventDefault(); // Prevent default click event
+			scroll.animateScroll( anchor, toggle, settings || {} ); // Animate scroll
+		};
+
+		window.addEventListener('click', clickHandler, false );
+	};
+
+	// Run our function
+	smoothScrollWithoutHash( 'a[href*="#"]' );
+    function misteryGG (){
+      alert('Told you');
+      document.getElementById('ht').classList.add('mistery');
+    }
+    $(window).on('load', function() {  
+    	$("#loader").fadeOut("slow").css("display","none");
+    	$("body").css("background-color","#0CC285");
+	});
+    $(document).ready(function(){
+    	var wd = $(window).width();
+    	var hg = $(window).height();
+    	if (wd<=768) {
+    		$("nav").removeClass("fixed-top").addClass("bg-dark").addClass("sticky-top");
+    	}
+    	$(window).scroll(function(){
+    		var hgg = $(window).height();
+    		$("#ht").css("height", hgg);
+    	});
+    });
+  </script>
+  
+  <!--Entypo pictograms by Daniel Bruce — www.entypo.com-->
+</body>
+</html>
